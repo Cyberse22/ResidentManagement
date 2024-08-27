@@ -1,1 +1,2 @@
-# ResidentManagement
+# Resident_management
+springMVC, ReactJS

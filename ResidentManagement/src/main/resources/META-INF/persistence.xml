@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.dtb_ResidentManagement_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.nhom13.pojo.ElectronicLocker</class>
+    <class>com.nhom13.pojo.Admin</class>
+    <class>com.nhom13.pojo.User</class>
+    <class>com.nhom13.pojo.Survey</class>
+    <class>com.nhom13.pojo.Feedback</class>
+    <class>com.nhom13.pojo.Item</class>
+    <class>com.nhom13.pojo.Answer</class>
+    <class>com.nhom13.pojo.ResidentVisitor</class>
+    <class>com.nhom13.pojo.Resident</class>
+    <class>com.nhom13.pojo.Question</class>
+    <class>com.nhom13.pojo.Visitor</class>
+    <class>com.nhom13.pojo.Invoice</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/resident_management?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Admin@123"/>
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="content" value="" />
+    </definition>
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ quản trị" />
+        <put-attribute name="content" value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    
+    <definition name="resident" extends="baseLayout">
+        <put-attribute name="title" value="Thêm cư dân" />
+        <put-attribute name="content" value="/WEB-INF/pages/resident.jsp" />
+    </definition>
+
+    <definition name="electronic-lockers" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý tủ đồ" />
+        <put-attribute name="content" value="/WEB-INF/pages/electronicLocker.jsp" />
+    </definition>
+
+    <definition name="item" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết tủ đồ" />
+        <put-attribute name="content" value="/WEB-INF/pages/item.jsp" />
+    </definition>
+
+    <definition name="item-detail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết hàng" />
+        <put-attribute name="content" value="/WEB-INF/pages/item-detail.jsp" />
+    </definition>
+
+    <definition name="invoice-detail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết hóa đơn" />
+        <put-attribute name="content" value="/WEB-INF/pages/invoice-detail.jsp" />
+    </definition>
+
+    <definition name="invoice-residents" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý thanh toán" />
+        <put-attribute name="content" value="/WEB-INF/pages/invoice-residents.jsp" />
+    </definition>
+
+    <definition name="invoice-resident-detail" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý thanh toán" />
+        <put-attribute name="content" value="/WEB-INF/pages/invoice-resident-detail.jsp" />
+    </definition>
+    
+    <definition name="feedbacks" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý phản hồi" />
+        <put-attribute name="content" value="/WEB-INF/pages/feedback.jsp" />
+    </definition>
+    
+    <definition name="surveys" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý khảo sát" />
+        <put-attribute name="content" value="/WEB-INF/pages/survey.jsp" />
+    </definition>
+    
+    <definition name="surveyDetail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết khảo sát" />
+        <put-attribute name="content" value="/WEB-INF/pages/survey_detail.jsp" />
+    </definition>
+    
+    <definition name="addSurvey" extends="baseLayout">
+        <put-attribute name="title" value="Tạo khảo sát" />
+        <put-attribute name="content" value="/WEB-INF/pages/add_survey.jsp" />
+    </definition>
+    
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Trang đăng nhập" />
+        <put-attribute name="content" value="/WEB-INF/pages/login.jsp" />
+    </definition>
+    
+    <definition name="admin" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin.jsp" />
+    </definition>
+    
+    <definition name="visitor" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý khách" />
+        <put-attribute name="content" value="/WEB-INF/pages/visitor.jsp" />
+    </definition>
+    
+    <definition name="updateVisitor" extends="baseLayout">
+        <put-attribute name="title" value="Chỉnh sửa thông tin khách" />
+        <put-attribute name="content" value="/WEB-INF/pages/update_visitor.jsp" />
+    </definition>
+    
+    <definition name="invoice-create-multiple" extends="baseLayout">
+        <put-attribute name="title" value="Tao hoa don" />
+        <put-attribute name="content" value="/WEB-INF/pages/invoice-create-multiple.jsp" />
+    </definition>
+    
+</tiles-definitions>
